@@ -8,7 +8,7 @@
 <h1>Hello, it's me</h1>
 <p>I was wondering if after all this time you'd like security...</p>
 
-<h1 th:inline="text">You are: [[${#httpServletRequest.remoteUser}]]!</h1>
+<p th:inline="text">You are: [[${#httpServletRequest.remoteUser}]]!</p>
 <form th:action="@{/logout}" method="post">
     <input type="submit" value="Sign Out"/>
 </form>
